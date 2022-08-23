@@ -1,71 +1,118 @@
 *{
     box-sizing: border-box;
 }
-
 body{
-    background-color: rgb(234, 213, 179);
+    background:url("plume3.jpg")no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;  
-    margin:0;  
-}
+    margin: 0;
 
+    min-height: 100vh;
+}
 .container{
+    background-color: azure;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0) ;
     width: 400px;
-    background-color: #fff;
-    border-radius: 4px;
+    max-width: 100%;
     overflow: hidden;
 }
 .header{
-    background-color: #d8d1d1;
-    padding: 10px 20px;
+    background-color:rgb(201, 248, 238);
+    padding: 20px 40px;
+    border-bottom:1px solid cornsilk ;
+}
+.header h2{
+    margin:0;
 }
 .form{
     padding: 20px 40px;
 }
-
 .form-control{
-    margin-bottom:10px;
-    padding-bottom: 10px;
-    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position:relative;
 }
-.form-control lable {
+.form-control label{
     display: inline-block;
-    margin-bottom:5px;
+    margin-bottom: 5px;
 }
-.form-control input{
-    display: block;
-    width: 100%;
-    padding: 10px;
+.form-control input {
+    border:2px solid #f0f0f0;
     border-radius: 4px;
-    border:2px solid #d8d1d1;
-}
-.form-control select{
     display: block;
-    width: 100%;
+    font-size: 14px;
     padding: 10px;
-    border-radius: 4px;
-    border:2px solid #d8d1d1;
-}
+    width:100%;
+    font-family: 'Courier New', Courier, monospace;
 
+
+}
+.form-control select {
+    border:2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width:100%;
+    font-family: 'Courier New', Courier, monospace;
+
+
+}
 .form-control.success input{
-    border:2px solid rgb(26, 167, 26);
+    border-color: rgb(80, 237, 132);
 }
 .form-control.error input{
-    border:2px solid rgb(228, 29, 22);
+    border-color: rgb(235, 27, 27);
 }
-.form-control small{
-    position:absolute;
-    margin: 3px;
+.form-control.success select{
+    border-color: rgb(80, 237, 132);
+}
+.form-control.error select{
+    border-color: rgb(235, 27, 27);
+}
+
+
+
+.form-control i{
+    position:absolute;   /* circles*/
+    top: 40px;
+    right:10px;
     visibility: hidden;
 }
-button{
-    background-color: rgb(4,4,95);
-    color:#fff;
-    padding: 10px 20px;
-    width: 100%;
-    border-radius:4px;
-    border:2px solid rgb(4,4,95);
-    cursor: pointer;
+.form-control.success i.fa-check-circle{
+    visibility: visible;
+    color: rgb(80, 237, 132) ;
+}
+.form-control.error i.fa-exclamation-circle{
+    visibility: visible;
+    color: rgb(235, 27, 27) ;
+}
+.form-control.error small{
+    visibility: visible;
+    color: rgb(235, 27, 27) ;
+
+
+}
+
+.form-control small{
+    position:absolute;
+    visibility: hidden;
+    /* bottom:0; */
+    left:0;
+
+
+}
+.form button{
+    background-color: aquamarine;
+    border:2px solid rgb(114, 228, 243);
+    display: block;
+    width:100%;
+    padding: 10px;
+    font-size: 16px;
+
+    color: #FFF;
 }
