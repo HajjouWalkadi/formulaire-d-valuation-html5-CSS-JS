@@ -29,7 +29,7 @@ form.addEventListener("submit", (e) => {
     if (fullNameValue === "") {
         // show error message
         // add error class
-        setErrorMessage(fullName, "Full Name field can't be blank. Required this field.");
+        setErrorMessage(fullName, "Full Name field cannot be blank. Required this field.");
     
         // focus element
         fullName.focus();
@@ -47,7 +47,7 @@ form.addEventListener("submit", (e) => {
        if (emailValue === "") {
         // show error message
         // add error class
-        setErrorMessage(email, "Email field can't be blank. Required this field.");
+        setErrorMessage(email, "Email field cannot be blank. Required this field.");
     
         // focus element
         email.focus();
@@ -66,7 +66,7 @@ form.addEventListener("submit", (e) => {
       if (phoneNumberValue === "") {
         // show error message
         // add error class
-        setErrorMessage(phoneNumber, "Phone Number field can't be blank. Required this field.");
+        setErrorMessage(phoneNumber, "Phone Number field cannot be blank. Required this field.");
     
         // focus element
         phoneNumber.focus();
@@ -83,7 +83,7 @@ form.addEventListener("submit", (e) => {
       if (ageValue === "") {
         // show error message
         // add error class
-        setErrorMessage(age, "Age field can't be blank. Required this field.");
+        setErrorMessage(age, "Age field cannot be blank. Required this field.");
     
         // focus element
         password.focus();
@@ -102,7 +102,7 @@ form.addEventListener("submit", (e) => {
 if (passwordValue === "") {
     // show error message
     // add error class
-    setErrorMessage(password, "Password field can't be blank. Required this field.");
+    setErrorMessage(password, "Password field cannot be blank. Required this field.");
 
     // focus element
     password.focus();
@@ -120,7 +120,7 @@ if (passwordValue === "") {
   if (checkPasswordValue === "") {
     // show error message
     // add error class
-    setErrorMessage(checkPassword, "Password field can't be blank. Required this field.");
+    setErrorMessage(checkPassword, "Password field cannot be blank. Required this field.");
 
     // focus element
     checkPassword.focus();
